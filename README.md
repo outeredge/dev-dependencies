@@ -42,12 +42,12 @@ Add this repository to your **package.json** file
 {
   "devDependencies": {
     "jscs": "~3.0.6",
-    "jscs-config-outeredge": "~1.0.0"
+    "jscs-preset-outeredge": "~1.0.0"
   }
 }
 ```
 
-Then use set your prefix to `outeredge` in your own **.jscs** file.
+Then use set your prefix to `outeredge` in your own **.jscsrc** file.
 
 ```json
 {
