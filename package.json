@@ -1,0 +1,5 @@
+{
+  "name": "jscs-preset-outeredge",
+  "version": "1.0.0",
+  "main": ".jscsrc"
+}
