@@ -5,7 +5,7 @@ This repository contains the coding standards used by outer/edge with rules for:
  - PHPCS
  - JSCS
  
-## Running PHPCS tests
+## PHP
 
 First be sure to have PHPCS available
 
@@ -34,7 +34,15 @@ Then you can add the outer/edge coding standard to your **phpcs.xml**
 </xml>
 ```
 
-## Running JSCS tests
+### Running PHPCS tests
+
+`$ ~/.composer/vendor/bin/phpcs .`
+
+### Running PHPCS code fixer
+
+`$ ~/.composer/vendor/bin/phpcbf .`
+
+## Javascript
 
 Add this repository to your **package.json** file
 
