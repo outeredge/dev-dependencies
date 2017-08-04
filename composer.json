@@ -1,0 +1,13 @@
+{
+    "name": "outeredge/coding-standards",
+    "description": "Coding standard definition files used by outer/edge.",
+    "homepage": "https://github.com/outeredge/coding-standards",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "outer/edge",
+            "homepage": "https://outeredgeuk.com",
+            "role": "Maintainer"
+        }
+    ]
+}
