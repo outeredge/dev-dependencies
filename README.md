@@ -13,7 +13,7 @@ First be sure to have PHPCS available
 $ composer global require "squizlabs/php_codesniffer=*"
 ```
 
-Then add this repository to your composer.json
+Then add this repository to your **composer.json**
 
 ```json
 {
@@ -23,11 +23,35 @@ Then add this repository to your composer.json
 }
 ```
 
-Then you can add the outer/edge coding standard to your phpcs.xml
+Then you can add the outer/edge coding standard to your **phpcs.xml**
 
 ```xml
-...
+<?xml version="1.0"?>
+    ...
     <config name="installed_paths" value="vendor/outeredge/coding-standards"/>
     <rule ref="OuterEdge"/>
-...
+    ...
+</xml>
+```
+
+## Running JSCS tests
+
+Add this repository to your **package.json** file
+
+```json
+{
+  "devDependencies": {
+    "jscs": "~3.0.6",
+    "jscs-config-outeredge": "~1.0.0"
+  }
+}
+```
+
+Then use set your prefix to `outeredge` in your own **.jscs** file.
+
+```json
+{
+  "preset": "outeredge",
+  ...
+}
 ```
