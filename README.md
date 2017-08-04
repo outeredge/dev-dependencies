@@ -18,8 +18,7 @@ Then add this repository to your composer.json
 ```json
 {
     "require-dev": {
-        "outeredge/coding-standards": "~1.0.0",
-        "squizlabs/php_codesniffer": "3.*"
+        "outeredge/coding-standards": "~1.0.0"
     }
 }
 ```
