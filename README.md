@@ -51,7 +51,6 @@ Then use set your prefix to `outeredge` in your own **.jscsrc** file.
 
 ```json
 {
-  "preset": "outeredge",
-  ...
+  "preset": "outeredge"
 }
 ```
