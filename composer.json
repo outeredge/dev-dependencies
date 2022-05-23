@@ -1,13 +1,20 @@
 {
-    "name": "outeredge/coding-standards",
-    "description": "Coding standard definition files used by outer/edge.",
-    "homepage": "https://github.com/outeredge/coding-standards",
+    "name": "outeredge/dev-dependencies",
+    "description": "Dev tools used by outer/edge",
+    "homepage": "https://github.com/outeredge/dev-dependencies",
     "license": "MIT",
     "authors": [
         {
             "name": "outer/edge",
-            "homepage": "https://outeredgeuk.com",
+            "homepage": "https://outeredge.agency",
             "role": "Maintainer"
         }
-    ]
+    ],
+    "require": {
+        "magento-ecg/coding-standard": "^4.5",
+        "squizlabs/php_codesniffer": "^3.6",
+        "elgentos/masquerade": "^1.1",
+        "bitexpert/phpstan-magento": "^0.21",
+        "phpstan/extension-installer": "^1.1"
+    }
 }
