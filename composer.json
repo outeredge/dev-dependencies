@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "magento-ecg/coding-standard": "^4.5",
+        "magento/magento-coding-standard": "^25.0",
         "squizlabs/php_codesniffer": "^3.6",
         "phpcompatibility/php-compatibility": "^9.3",
         "elgentos/masquerade": "^1.0",
