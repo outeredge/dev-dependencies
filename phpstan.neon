@@ -3,6 +3,7 @@ parameters:
     fileExtensions:
         - php
         - phtml
+    reportUnmatchedIgnoredErrors: false
     ignoreErrors:
         - '#unknown class ([^\s]+)Factory#'
         - '#invalid typehint type ([^\s]+)Factory#'
