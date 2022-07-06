@@ -1,8 +1,0 @@
-{
-    "preset": "google",
-    "validateIndentation": 4,
-    "maximumLineLength": {
-      "value": 200,
-      "allExcept": ["comments", "regex", "require"]
-    }
-}
