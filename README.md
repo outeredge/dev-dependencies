@@ -6,7 +6,7 @@ This repository contains the coding standards used by outer/edge with rules for:
 
 ## Install
 
-`composer require --dev outeredge/coding-standards`
+`composer require --dev outeredge/dev-dependencies`
 
 Then you can add the outer/edge coding standard to your **phpcs.xml**, i.e. for Magento 2:
 
