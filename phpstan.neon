@@ -1,0 +1,9 @@
+parameters:
+    level: 1
+    fileExtensions:
+        - php
+        - phtml
+    ignoreErrors:
+        - '#unknown class ([^\s]+)Factory#'
+        - '#invalid typehint type ([^\s]+)Factory#'
+        - '#Variable \$[^\s]+ might not be defined#'
