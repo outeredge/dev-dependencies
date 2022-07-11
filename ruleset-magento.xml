@@ -10,6 +10,8 @@
 
     <arg name="colors"/>
     <arg name="extensions" value="php" />
+    
+    <exclude-pattern>*/vendor/*</exclude-pattern>
 
     <rule ref="./ruleset.xml" />
     <rule ref="Magento2" />
