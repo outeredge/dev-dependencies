@@ -3,6 +3,8 @@ parameters:
     fileExtensions:
         - php
         - phtml
+    excludePaths:
+        - 'vendor/*'
     reportUnmatchedIgnoredErrors: false
     ignoreErrors:
         - '#unknown class ([^\s]+)Factory#'
