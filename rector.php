@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 use Rector\Config\RectorConfig;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
@@ -10,7 +8,7 @@ use Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector;
 use Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector;
 use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 
-return static function (RectorConfig $rectorConfig): void {
+public static function applyRectorDefaults(RectorConfig $rectorConfig) {
     $rectorConfig->skip([
         __DIR__ . '/vendor',
 
