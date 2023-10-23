@@ -10,8 +10,22 @@ use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 
 function applyRectorDefaults(RectorConfig $rectorConfig) {
     $rectorConfig->phpstanConfig(__DIR__ . '/../../../phpstan.neon');
+    
+    $rectorConfig->fileExtensions([
+        'php',
+        'phtml'
+    ]);
+    
+    $rectorConfig->sets([
+        LevelSetList::UP_TO_PHP_81,
+        SetList::DEAD_CODE,
+        SetList::CODE_QUALITY,
+        SetList::CODING_STYLE
+    ]);                       
+};
 
-    $rectorConfig->skip([
+function outeredgeRectorSkipDefaults() {
+    return [
         __DIR__ . '/vendor',
 
         NewlineAfterStatementRector::class => [
@@ -25,17 +39,5 @@ function applyRectorDefaults(RectorConfig $rectorConfig) {
 
         ExplicitBoolCompareRector::class,
         FinalizePublicClassConstantRector::class
-    ]);
-
-    $rectorConfig->fileExtensions([
-        'php',
-        'phtml'
-    ]);
-
-    $rectorConfig->sets([
-        LevelSetList::UP_TO_PHP_81,
-        SetList::DEAD_CODE,
-        SetList::CODE_QUALITY,
-        SetList::CODING_STYLE
-    ]);
-};
+    ];
+}
