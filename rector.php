@@ -8,7 +8,9 @@ use Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector;
 use Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector;
 use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 
-public static function applyRectorDefaults(RectorConfig $rectorConfig) {
+function applyRectorDefaults(RectorConfig $rectorConfig) {
+    $rectorConfig->phpstanConfig(__DIR__ . '/../../../phpstan.neon');
+
     $rectorConfig->skip([
         __DIR__ . '/vendor',
 
@@ -16,9 +18,13 @@ public static function applyRectorDefaults(RectorConfig $rectorConfig) {
             '*.phtml',
         ],
 
+        // Stop rector breaking short open tags
+        RemoveAlwaysTrueIfConditionRector::class => [
+            '*.phtml',
+        ],
+
         ExplicitBoolCompareRector::class,
-        FinalizePublicClassConstantRector::class,
-        RemoveAlwaysTrueIfConditionRector::class
+        FinalizePublicClassConstantRector::class
     ]);
 
     $rectorConfig->fileExtensions([
