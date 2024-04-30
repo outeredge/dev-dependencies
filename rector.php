@@ -17,7 +17,7 @@ function applyRectorDefaults(RectorConfig $rectorConfig) {
     ]);
 
     $rectorConfig->sets([
-        LevelSetList::UP_TO_PHP_83,
+        LevelSetList::UP_TO_PHP_82,
         SetList::DEAD_CODE,
         SetList::CODE_QUALITY,
         SetList::CODING_STYLE
