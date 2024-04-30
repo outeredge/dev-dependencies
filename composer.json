@@ -11,11 +11,12 @@
         }
     ],
     "require": {
-        "magento/magento-coding-standard": "30",
-        "rector/rector": "^0.14.8",
+        "php": "^8.3",
+        "magento/magento-coding-standard": "33",
+        "rector/rector": "^0.17.12",
         "squizlabs/php_codesniffer": "^3.7",
         "phpcompatibility/php-compatibility": "^9.3",
-        "bitexpert/phpstan-magento": "^0.28",
+        "bitexpert/phpstan-magento": "^0.30",
         "phpstan/extension-installer": "^1.3"
     }
 }
