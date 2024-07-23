@@ -6,6 +6,7 @@ use Rector\Set\ValueObject\SetList;
 use Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector;
 use Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector;
 use Rector\CodingStyle\Rector\ClassMethod\RemoveDoubleUnderscoreInMethodNameRector;
+use Rector\Php73\Rector\FuncCall\JsonThrowOnErrorRector;
 use Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector;
 use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 
@@ -40,6 +41,7 @@ function outeredgeRectorSkipDefaults() {
 
         ExplicitBoolCompareRector::class,
         FinalizePublicClassConstantRector::class,
+        JsonThrowOnErrorRector::class,
         RemoveDoubleUnderscoreInMethodNameRector::class
     ];
 }
