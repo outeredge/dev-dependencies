@@ -5,23 +5,24 @@ use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
 use Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector;
 use Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector;
+use Rector\CodingStyle\Rector\ClassMethod\RemoveDoubleUnderscoreInMethodNameRector;
 use Rector\Php81\Rector\ClassConst\FinalizePublicClassConstantRector;
 use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 
 function applyRectorDefaults(RectorConfig $rectorConfig) {
     $rectorConfig->phpstanConfig(__DIR__ . '/../../../phpstan.neon');
-    
+
     $rectorConfig->fileExtensions([
         'php',
         'phtml'
     ]);
-    
+
     $rectorConfig->sets([
         LevelSetList::UP_TO_PHP_81,
         SetList::DEAD_CODE,
         SetList::CODE_QUALITY,
         SetList::CODING_STYLE
-    ]);                       
+    ]);
 };
 
 function outeredgeRectorSkipDefaults() {
@@ -38,6 +39,7 @@ function outeredgeRectorSkipDefaults() {
         ],
 
         ExplicitBoolCompareRector::class,
-        FinalizePublicClassConstantRector::class
+        FinalizePublicClassConstantRector::class,
+        RemoveDoubleUnderscoreInMethodNameRector::class
     ];
 }
