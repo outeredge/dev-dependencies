@@ -17,6 +17,7 @@
         "magento/php-compatibility-fork": "^0.1",
         "bitexpert/phpstan-magento": "^0.32",
         "phpstan/extension-installer": "^1.4",
-        "deployer/deployer": "^7.5"
+        "deployer/deployer": "^7.5",
+        "mage-os/magento-cache-clean": "^1.1"
     }
 }
