@@ -20,4 +20,8 @@
     <rule ref="Internal.NoCodeFound">
         <severity>0</severity>
     </rule>
+
+    <rule ref="Magento2.Html.HtmlSelfClosingTags.HtmlSelfClosingNonVoidTag">
+        <severity>0</severity>
+    </rule>
 </ruleset>
