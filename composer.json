@@ -1,6 +1,7 @@
 {
     "name": "outeredge/dev-dependencies",
     "description": "Dev tools used by outer/edge",
+    "type": "phpcodesniffer-standard",
     "homepage": "https://github.com/outeredge/dev-dependencies",
     "license": "MIT",
     "authors": [
