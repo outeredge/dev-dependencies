@@ -9,6 +9,7 @@ use Rector\Php73\Rector\FuncCall\JsonThrowOnErrorRector;
 use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 use Rector\DeadCode\Rector\ClassMethod\RemoveUselessReturnTagRector;
 use Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector;
+use Rector\TypeDeclaration\Rector\ClassMethod\MixedTypeRector;
 
 function applyRectorDefaults(RectorConfig $rectorConfig) {
     $rectorConfig->phpstanConfig(__DIR__ . '/../../../phpstan.neon');
@@ -18,7 +19,7 @@ function applyRectorDefaults(RectorConfig $rectorConfig) {
     ]);
 
     $rectorConfig->sets([
-        LevelSetList::UP_TO_PHP_83,
+        LevelSetList::UP_TO_PHP_84,
         SetList::DEAD_CODE,
         SetList::CODE_QUALITY,
         SetList::CODING_STYLE
